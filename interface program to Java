@@ -1,0 +1,29 @@
+interface Are
+{
+ final static float pi=3.14f;
+ double compute(double x,double y);
+}
+interface Display extends Area
+{
+ void display_result(double result);
+}
+class Rectangle implements Display
+{
+ public double compute(double x,double y)
+ {
+  return(pi*x*y);
+}
+public void display_result(double result)
+{
+System.out.println("The area is:"+result);
+}
+}
+class InterfaceDemo
+{
+ public static void main(String args[])
+{
+ Rectangle r1=new Rectangle();
+ double res=r1.compute(10.2,20.4);
+ r1.display_result(res);
+ }
+}io
