@@ -1,4 +1,4 @@
-interface Are
+interface Area
 {
  final static float pi=3.14f;
  double compute(double x,double y);
